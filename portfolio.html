@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o CSS personalizado do site -->
+    <link rel="stylesheet" href="style.css">  
+    <!-- Título da página que aparece na aba do navegador -->
+    <title>Vinicius Kihara - Portfólio</title>
+    <style>
+        /* Estilização global do corpo da página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            color: #04f397;
+        }
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .tab-content {
+            padding: 20px;
+            background: #000000;
+            border: 1px solid #000000;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #000000;
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #04f397;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .card h3 {
+            font-size: 20px;
+            margin: 10px 0 5px;
+            align-items: center;
+        }
+        .card p {
+            font-size: 14px;
+            color: #ffffff;
+        }
+        .btn {
+            text-decoration: none;
+            color: #04f397;
+            border: 1px solid #04f397;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #04f397;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Logo do site, com um caractere em japonês -->
+        <a href="#" class="logo">木原</a>  
+        <nav>
+            <!-- Links de navegação -->
+            <a href="index.html" class="active">Sobre mim</a>
+            <a href="formacao.html">Formação</a>
+            <a href="experiencia.html">Experiência</a>
+            <a href="portfolio.html">Portfólio</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="tab1" class="tab-content active">
+             <!-- Cartão do projeto -->
+            <div class="card">
+                <img src="projeto 1.png" alt="Imagem 1">
+                <h3>Projeto Steam</h3>
+                <p>Desenvolvido como parte da disciplina de Design de Interação, este protótipo simula uma loja de jogos online inspirada na Steam. O projeto visa demonstrar e aplicar princípios de design de interação, oferecendo uma experiência de usuário interativa com funcionalidades como navegação de jogos e detalhes de produtos.</p><br>
+                <!-- Botão que leva ao projeto.-->
+                <a href="https://app.quant-ux.com/#/test.html?h=a2aa10aAHzCWmsC7nxDJIXVzI3EzOwVSJwN2ZhRoRlNIg6wX8Z9YFriEhFYq&ln=pt" target="_blank" class="btn">Acessar</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
